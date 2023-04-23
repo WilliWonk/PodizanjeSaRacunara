@@ -1,0 +1,466 @@
+mysql
+https://www.youtube.com/watch?v=Hhl7z1nZAe0     install mysql workbench
+
+cli
+sudo apt-get update
+sudo apt-get install mysql-workbench
+ovo nece
+
+---------------------------
+synaptic package manager
+synaptic upravitelj paketa
+---------------------------
+
+https://linuxhint.com/install-mysql-linux-mint-ubuntu/
+
+sudo apt update
+sudo apt install mysql-server
+
+/var/lib
+---------------------------
+
+sudo mysql -u
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'genije';
+
+---------------------------
+linux pass: leptir
+sql pass: genije
+phpMyadmin pass: mikula nije // root/leptir
+--------------------------
+https://techviewleo.com/how-to-install-lamp-stack-on-linux-mint/
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+
+sudo reboot
+
+sudo apt-get install lamp-server
+
+sudo systemctl status apache2
+
+sudo mysql -u root
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'leptir';
+
+mysql> quit
+
+sudo apt-get install phpmyadmin
+
+sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+sudo a2enconf phpmyadmin
+sudo systemctl restart apache2
+
+http://localhost/phpmyadmin
+--------------------------------------------------
+
+https://snapcraft.io/install/mysql-workbench-community/mint
+
+-------------------------------------------------------
+
+pomoć: http://www.linuxmint.com/forum
+
+-----------------------------
+
+kako promjeniti root pasword phpmyadmin (stvarno radi)
+
+https://devanswers.co/how-to-reset-mysql-root-password-ubuntu/
+
+-------------------------------------------------------
+
+@SpringBootApplication
+
+|               pipe
+@
+{}
+[]
+~
+``
+{{ }}
+[( )]
+
+                htmlKomponenta   iliti  template
+thymeleaf
+
+6200
+620
++1 501-236-2101   ana instagram
+-----------------------------
+youtube        Employee Management System (Angular + Spring boot)
+https://www.youtube.com/watch?v=VR1zoNomG3w
+
+Employee Management System (Angular + Spring boot) at GitHub
+https://github.com/RameshMF/Angular-10-Spring-Boot-CRUD-Full-Stack-App
+
+01:23/ 04:32
+02:19 ponoviti, dosao do 20:27
+
+dodati:
+pretraga po imenu
+
+napraviti:
+favorite link list
+
+-----------------------------
+PCchip
+https://pcchip.hr/helpdesk/angular-programiranje-1-dio-uvod-u-angular-4/
+
+https://pcchip.hr/softver/angular-2-najbolji-izvori-za-ucenje/
+
+powerPoint uvod u angular
+https://www.bpa.edu.rs/FileDownload?filename=6940f387-985d-49c8-be1b-577584657454.pdf&originalName=IT06.pdf
+
+https://pixabay.com/        galerija slika
+
+https://jsonplaceholder.typicode.com/           rest api
+
+https://stackblitz.com/         //instant dev environmemts
+https://stackblitz.com/edit/http-basics?file=app%2Fapp.component.ts
+
+angular 13 UI components
+https://www.jqwidgets.com/angular/?gclid=CjwKCAjwjZmTBhB4EiwAynRmD_z7dplpM4s5N1Veot7CeL3HKl3xfGbtn2oi7ulE5o0FdfD28m47NxoC6SgQAvD_BwE
+
+source code examples    java/springBoot
+https://www.sourcecodeexamples.net/
+
+uvod u cli
+https://www.tomislavstankovic.com/blog/uvod-angular-cli/
+
+angular CRUD na nasem
+https://www.tomislavstankovic.com/blog/angular-crud-aplikacija/
+
+bootstrap komponente
+https://getbootstrap.com/docs/3.3/components/
+
+tic tac toe
+https://www.youtube.com/watch?v=G0bBLvWXBvc
+https://www.youtube.com/watch?v=2n627V9ZTAM
+
+to do app
+https://www.youtube.com/watch?v=i7KaVFOXNUQ
+presao ponoviti
+
+type script
+https://www.youtube.com/watch?v=ahCwqrYpIuM
+
+Free Spring Boot Angular Projects on GitHub | Download from GitHub  -  JavsGuides
+https://www.youtube.com/watch?v=r90sR7msFk4&list=PLGRDMO4rOGcPt1zTgO6RU5a78YbhwhYFX&index=3
+
+Spring Boot Tutorial for Beginners - Learn Spring Boot in 10 Hours  -   JavaGuides
+https://www.youtube.com/watch?v=_thI-4AF7M8
+
+AWS = Amazon Web Services = Amazon Cloud Services =
+https://www.youtube.com/watch?v=7xvf38lClY8&list=PLVz2XdJiJQxxurKT1Dqz6rmiMuZNdClqv
+poceo
+
+AWS
+dubravkop@blic.net
+pass: trEEgiga_22
+Account ID: dubravkop@blic.net
+IAM user name: skviki
+
+
+
+----------------------------------------------------------
+
+- svaka Angular aplikacija se sastoji od modula (NgModule)
+- modul je osnovni gradivni blok svake angular aplikacije
+- moduli su logičke celine angular aplikacije, blokovi funkcionalnosti (koreni modul, modul za rutiranje i sl.)
+- modul se sastoji od komponenti
+- da bi neka klasa bila modul, mora da ima anotaciju @NgModule
+
+                    ROOT ANGULAR MODULE
+                 /            /       /
+            COMPONENT   COMPONENT   COMPONENT
+
+
+
+- komponenta kontroliše deo ekrana koji se naziva pogled
+- svaka komponenta obezbeđuje deo funkcionalnosti za aplikaciju
+- komponenta se sastoji od:
+    • Klase
+    • Metapodatka koji opisuju klasu i proširuju njenu funkcionalnost
+    • Šablona koji se koristi za definisanje html pogleda
+
+                    COMPONENT
+                 /       /       /
+            TEMPLATE   CLASS  METADATA
+
+
+Struktura kreirane aplikacije
+• Folder e2e (end to end testing) sadrži konfiguracione fajlove za testiranje aplikacije (unit test)
+• Folder node_modules sadrži preuzete pakete
+• Folder src sadrži izvor kod i ima 3 podfoldera
+• app folder sadrži fajlove angular projekta: komponente, šablone, poglede,....
+• assets folder sadrži statičke fajlove kao što su npr. slike
+• environments folder sadrži fajlove vezane za okruženje, postoji razvojno i produkciono okruženje
+• Fajl tsconfig.json sadrži typescript konfiguraciju
+• Fajl package.json je JSON fajl koji sadrži informacije o potrebnim paketima u projektu
+• Fajl angular.json sadrži konfiguracione opcije za kompajliranje i razmeštanje projekta
+
+
+Folder src
+• Fajl index.html predstavlja glavnu html stranu koja se učitava pri poseti sajta
+• Fajl main.ts predstavlja glavnu ulaznu tačku aplikacije, tu se specificira koreni modul aplikacije koji se pokreće pri pokretanju aplikacije
+• favicon.ico je ikona koja se prikazuje u tabu browsera
+
+
+Glavni(koreni) modul aplikacije         "app.module.ts"
+• Prilikom kreiranja nove angular aplikacije angular automatski generise glavni(koreni, root) modul aplikacije AppModule
+• Da bi neka klasa bila modul, mora da ima anotaciju @NgModule
+• Prilikom izrade aplikacije, učitavamo razlicite eksterne module (druge biblioteke) u postojeći modul (aplikaciju)
+
+
+Glavni(koreni) modul aplikacije
+• Deklaracija import služi za uzimanje funkcionalnosti iz postojećih modula
+• Dekoratoru (anotaciji) @NgModule se prosleđuje objekat koji sadrži svojstva declarations, imports, providers i bootstrap
+• Svim ovim svojstvima se dodeljuju nizovi
+• declarations niz specificira koje komponente i direktive pripadaju modulu
+• imports niz služi da se importuju funkcionalnost iz drugih modula
+• providers niz služi da se specificiraju servisi koji obezbeđuju podatke
+• bootstrap niz (govori angularu koje komponente da kreira u ubaci u DOM browsera)
+• Ovde se učitava glavna(korena) komponenta aplikacije i ubacuje u stranu index.html
+
+
+Glavna komponenta aplikacije            "app.component.ts"
+• Glavni modul (koreni modul) aplikacije uvek ima glavnu (korenu ili root) komponentu AppComponent, ali može sadržati i druge komponente
+• Glavna komponenta se učitava prilikom pokretanja aplikacije
+
+
+Struktura glavne komponente
+• Direktiva import komponente importuje funkcionalnosti iz drugih modula
+• Klasa komponente ima dekorator @Component
+• Dekoratoru komponente se prosleđuje objekat koji sadrži svojstva (metapodaci)
+• selector, specificira ime html taga koji služi za ubacivanje komponente
+• templateUrl je adresa html šablona koga koristi komponenta
+• može se definisatii inline šablon pomoću svojstva template
+• styleUrls definiše stilove pridružen šablonu
+• može se definisati inline stil pomoću svostva styles
+
+
+--------------------------------------------------------
+
+npm -v  8.5.0
+node -v 16.14.2
+ng -- version   13.3.3
+
+npm install -g typescript       //instalira typescript navodno
+
+angular/cli
+
+ng new imeAplikacije            //kreira novu aplikaciju
+ng serve                        //pokrece aplikaciju u browseru
+ng serve -o                     //pokrece aplikaciju u browseru otvara automatski
+CTRL + C                        //zaustavljanje servera
+
+ng g class imeKlase             //kreira novu klasu
+ng g c imeKomponente            //kreira novu komponentu
+ng g s imeServisa               //kreira novi servis
+
+ng build --prod                 //kreira gotovu aplikaiju (folder dist)
+
+
+Kada ste spremni vašu Angular aplikaciju pustiti u produkciju dovoljno je pokrenuti naredbu:
+ng build    odnosno     ng bild --prod
+U ovom se koraku kreira ranije spomenuta dist mapa u kojoj se nalazi produkcijska verzija vaše Angular aplikacije.
+
+
+klasa vs. servis vs. komponenta vs. modul
+
+https://angular.io/guide/architecture-modules
+Every Angular application has at least one NgModule class, the root module, which is conventionally named AppModule and resides in a file named app.module.ts. 
+You launch your application by bootstrapping the root NgModule.
+
+A component controls a patch of screen called a view. 
+
+A Service is a broad category encompassing any value, function, or feature that an application needs. 
+A service is typically a class with a narrow, well-defined purpose. It should do something specific and do it well.
+
+
+-----------------------------
+
+bootstrap:
+1. nacin    instalirati     provjeriti u angular.json pod "styles"
+npm install bootstrap --save        //instalira bootstrap
+
+2. nacin    unijeti u style.css
+@~import "bootstrap/dist/css/bootstrap.min.css"
+
+3. nacin    cdn link   kopirati u head u index.html
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+------------------------------
+
+[
+      {
+        "id":1,
+        "firstName":"anto",
+        "lastName":"rebic",
+        "emailId":"anto@rebic.com"
+      },
+      {
+        "id":2,
+        "firstName":"luka",
+        "lastName":"modric",
+        "emailId":"luka@modric.com"
+      }
+    ]
+
+----------------------------
+
+postman
+u headers odabrati:
+Key: Content-type
+Value: application/json
+
+---------------------------
+
+install java 17
+https://www.linuxcapable.com/how-to-install-openjdk-17-on-linux-mint-20/
+
+--------------------------
+angular
+da ne bi izbacivao gresku inicijalizacije varijable:
+Just go to tsconfig.json 
+ and set
+"noImplicitReturns": false
+and then add
+"strictPropertyInitialization": false,
+
+--------------------------
+
+https://www.youtube.com/watch?v=XvemczQn56U&list=PLNmsVeXQZj7pY65LXhI1_bIcOByRhP9Xb     angular morpheus
+
+vs code usefull extensions:
+ctrl + p    ext install autoimport              instalirano
+ctrl + p    ext install johnpapa                instalirano
+ctrl + p    ext install angular file            instalirano
+ctrl + p    ext install angular2-inline         nije instalirano
+ctrl + p    ext install debbuger for chrome     nije instalirano
+
+--------------------------
+
+ngOnInit() vs constructor()
+
+constructor() metoda = se koristi kod dependency injection
+ngOnInit() metoda = se navodno koristi bez prinesenih parametara
+ 
+--------------------------
+
+@Injectable = pojavljuje se kod servisa, i kazuje da ova klasa moze biti injektirana u constructor kao parametar
+
+ova se klasa mora importirati u app.module.ts i navesti u u providers:
+
+--------------------------
+
+    API = komunicira sa backendom
+
+cryptocompare.com
+https://www.cryptocompare.com/
+https://min-api.cryptocompare.com/
+
+app.module.ts
+import { HttpClientModule } from '@angular/common/http';
+
+neka.component.ts
+import { HttpClient } from '@angular/common/http';
+
+subscribe() = metoda, ako se sta promijeni na izvornoj stranici pojavi se automatski ovdje
+
+-------------------------------------------
+constructor(private client: HttpClient) { }
+
+  ngOnInit() {
+    this.client.get( 'https://min-api.cryptocompare.com/data/price', { observe: 'response'} )
+    .subscribe(data => { 
+      console.log(data);
+    }, (err: HttpErrorResponse) => { 
+      if (err.error instanceof Error){ 
+        console.log("klijent glup da bi se pozvao");
+      }
+      else {
+      console.log("nesto je ovdje poslo krivo") 
+    }
+  });
+  }
+}
+-------------------------------------------
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/reference/global_objects/regexp 
+
+TEMPLATE DRIVEN Forms  vs     REACTIVE Forms
+
+Template Driven Forms vs Reactive Forms
+
+
+----------------------------------------
+
+=== NgModule ===
+
+const meineRouten: Routes = [
+  { path: 'video', component: VideoComponent},
+  { path: '', component: WebsiteComponent},
+]
+
+@NgModule({
+  declarations: [		
+    AppComponent,
+      VideoComponent,
+      WebsiteComponent
+   ],
+  imports: [
+    RouterModule.forRoot(meineRouten),
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule, 
+    HttpClientModule, 
+    ReactiveFormsModule
+  ],
+  providers: [VideoDBService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+@NgModule({
+  declarations: [ Component ],
+  imports: [ Module ],
+  providers: [ Service ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+
+-----------------------------------------
+
+BUILD vs SERVE
+
+ng serve -o
+
+pravi dist folder:
+ng build --prod
+
+instalira server da bi se mogla aplikacija pokrenuti:
+sudo npm install http-server -g
+
+pokretanje http servera:
+otici u dist folder
+http-server
+
+zaustavljanje servera:
+CTRL-C
+
+-----------------------------------
+
+ATRIBUTDIREKTIVE
+
+-----------------------------------
+
+
+
+
+45 
+
+
+
